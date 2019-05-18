@@ -33,7 +33,6 @@
             this.openIcon = new System.Windows.Forms.OpenFileDialog();
             this.openExe = new System.Windows.Forms.OpenFileDialog();
             this.content = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
             this.diskname = new System.Windows.Forms.TabPage();
             this.pickExe = new System.Windows.Forms.Button();
             this.pickIcon = new System.Windows.Forms.Button();
@@ -43,10 +42,13 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.help = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.saveAutorun = new System.Windows.Forms.SaveFileDialog();
+            this.compileContent = new System.Windows.Forms.CheckBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.fork = new System.Windows.Forms.LinkLabel();
             this.content.SuspendLayout();
             this.diskname.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox)).BeginInit();
@@ -72,21 +74,14 @@
             // content
             // 
             this.content.Controls.Add(this.label1);
+            this.content.Controls.Add(this.comboBox1);
+            this.content.Controls.Add(this.compileContent);
             this.content.Location = new System.Drawing.Point(4, 22);
             this.content.Name = "content";
             this.content.Size = new System.Drawing.Size(330, 378);
             this.content.TabIndex = 1;
             this.content.Text = "Content";
             this.content.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "not implemented yet... ¯\\_(ツ)_/¯";
             // 
             // diskname
             // 
@@ -161,8 +156,8 @@
             // 
             // help
             // 
+            this.help.Controls.Add(this.fork);
             this.help.Controls.Add(this.label5);
-            this.help.Controls.Add(this.label4);
             this.help.Controls.Add(this.label3);
             this.help.Controls.Add(this.label2);
             this.help.Location = new System.Drawing.Point(4, 22);
@@ -185,19 +180,6 @@
             this.label5.Text = "This is beta software.\r\nIt might be unstable.\r\nStuff may and will change in futur" +
     "e\r\nreleases.";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label4.Location = new System.Drawing.Point(88, 123);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 20);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Fork me on GitHub!";
-            this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // label3
             // 
@@ -222,6 +204,45 @@
             // saveAutorun
             // 
             this.saveAutorun.FileName = "autorun.inf";
+            // 
+            // compileContent
+            // 
+            this.compileContent.AutoSize = true;
+            this.compileContent.Location = new System.Drawing.Point(10, 10);
+            this.compileContent.Name = "compileContent";
+            this.compileContent.Size = new System.Drawing.Size(169, 17);
+            this.compileContent.TabIndex = 1;
+            this.compileContent.Text = "Compile content (Vista or later)";
+            this.compileContent.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(81, 34);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(235, 21);
+            this.comboBox1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Content type:";
+            // 
+            // fork
+            // 
+            this.fork.AutoSize = true;
+            this.fork.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fork.Location = new System.Drawing.Point(88, 119);
+            this.fork.Name = "fork";
+            this.fork.Size = new System.Drawing.Size(147, 21);
+            this.fork.TabIndex = 4;
+            this.fork.TabStop = true;
+            this.fork.Text = "Fork me on GitHub!";
+            this.fork.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Fork_LinkClicked);
             // 
             // Form1
             // 
@@ -252,7 +273,6 @@
         private System.Windows.Forms.OpenFileDialog openIcon;
         private System.Windows.Forms.OpenFileDialog openExe;
         private System.Windows.Forms.TabPage content;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage diskname;
         private System.Windows.Forms.Button pickExe;
         private System.Windows.Forms.Button pickIcon;
@@ -262,10 +282,13 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.SaveFileDialog saveAutorun;
         private System.Windows.Forms.TabPage help;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.CheckBox compileContent;
+        private System.Windows.Forms.LinkLabel fork;
     }
 }
 

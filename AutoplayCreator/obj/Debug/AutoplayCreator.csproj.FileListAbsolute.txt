@@ -8,3 +8,13 @@ D:\VS19\projects\AutoplayCreator\AutoplayCreator\obj\Debug\AutoplayCreator.cspro
 D:\VS19\projects\AutoplayCreator\AutoplayCreator\obj\Debug\AutoplayCreator.csproj.CoreCompileInputs.cache
 D:\VS19\projects\AutoplayCreator\AutoplayCreator\obj\Debug\AutoplayCreator.exe
 D:\VS19\projects\AutoplayCreator\AutoplayCreator\obj\Debug\AutoplayCreator.pdb
+D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\bin\Debug\AutoplayCreator.exe.config
+D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\bin\Debug\AutoplayCreator.exe
+D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\bin\Debug\AutoplayCreator.pdb
+D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Debug\AutoplayCreator.csprojAssemblyReference.cache
+D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Debug\AutoplayCreator.Form1.resources
+D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Debug\AutoplayCreator.Properties.Resources.resources
+D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Debug\AutoplayCreator.csproj.GenerateResource.cache
+D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Debug\AutoplayCreator.csproj.CoreCompileInputs.cache
+D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Debug\AutoplayCreator.exe
+D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Debug\AutoplayCreator.pdb

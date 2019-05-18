@@ -57,8 +57,7 @@ namespace AutoplayCreator {
             openExe.ShowDialog();
         }
 
-        private void Label4_Click(object sender, EventArgs e)
-        {
+        private void Fork_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
             System.Diagnostics.Process.Start("https://github.com/githubcatw/AutoPlayMaker");
         }
     }
