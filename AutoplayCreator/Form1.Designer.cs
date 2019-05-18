@@ -41,12 +41,12 @@
             this.name = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.saveAutorun = new System.Windows.Forms.SaveFileDialog();
             this.help = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.saveAutorun = new System.Windows.Forms.SaveFileDialog();
             this.content.SuspendLayout();
             this.diskname.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox)).BeginInit();
@@ -159,10 +159,6 @@
             this.tabControl1.Size = new System.Drawing.Size(338, 404);
             this.tabControl1.TabIndex = 1;
             // 
-            // saveAutorun
-            // 
-            this.saveAutorun.FileName = "autorun.inf";
-            // 
             // help
             // 
             this.help.Controls.Add(this.label5);
@@ -175,39 +171,6 @@
             this.help.TabIndex = 2;
             this.help.Text = "About";
             this.help.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(301, 50);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "AutoPlay Maker";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(117, 85);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 20);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Version 0.1";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label4.Location = new System.Drawing.Point(88, 123);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 20);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Fork me on GitHub!";
-            this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // label5
             // 
@@ -222,6 +185,43 @@
             this.label5.Text = "This is beta software.\r\nIt might be unstable.\r\nStuff may and will change in futur" +
     "e\r\nreleases.";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label4.Location = new System.Drawing.Point(88, 123);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(138, 20);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Fork me on GitHub!";
+            this.label4.Click += new System.EventHandler(this.Label4_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(78, 84);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(165, 20);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Version 0.1 (githubcatw)";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(13, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(301, 50);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "AutoPlay Maker";
+            // 
+            // saveAutorun
+            // 
+            this.saveAutorun.FileName = "autorun.inf";
             // 
             // Form1
             // 
