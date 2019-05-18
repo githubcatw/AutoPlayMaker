@@ -1,0 +1,10 @@
+D:\VS19\projects\AutoplayCreator\AutoplayCreator\bin\Debug\AutoplayCreator.exe.config
+D:\VS19\projects\AutoplayCreator\AutoplayCreator\bin\Debug\AutoplayCreator.exe
+D:\VS19\projects\AutoplayCreator\AutoplayCreator\bin\Debug\AutoplayCreator.pdb
+D:\VS19\projects\AutoplayCreator\AutoplayCreator\obj\Debug\AutoplayCreator.csprojAssemblyReference.cache
+D:\VS19\projects\AutoplayCreator\AutoplayCreator\obj\Debug\AutoplayCreator.Form1.resources
+D:\VS19\projects\AutoplayCreator\AutoplayCreator\obj\Debug\AutoplayCreator.Properties.Resources.resources
+D:\VS19\projects\AutoplayCreator\AutoplayCreator\obj\Debug\AutoplayCreator.csproj.GenerateResource.cache
+D:\VS19\projects\AutoplayCreator\AutoplayCreator\obj\Debug\AutoplayCreator.csproj.CoreCompileInputs.cache
+D:\VS19\projects\AutoplayCreator\AutoplayCreator\obj\Debug\AutoplayCreator.exe
+D:\VS19\projects\AutoplayCreator\AutoplayCreator\obj\Debug\AutoplayCreator.pdb
