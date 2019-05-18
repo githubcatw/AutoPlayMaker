@@ -46,9 +46,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.saveAutorun = new System.Windows.Forms.SaveFileDialog();
             this.compileContent = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.fork = new System.Windows.Forms.LinkLabel();
+            this.picture = new System.Windows.Forms.RadioButton();
+            this.music = new System.Windows.Forms.RadioButton();
+            this.video = new System.Windows.Forms.RadioButton();
             this.content.SuspendLayout();
             this.diskname.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox)).BeginInit();
@@ -73,8 +75,10 @@
             // 
             // content
             // 
+            this.content.Controls.Add(this.video);
+            this.content.Controls.Add(this.music);
+            this.content.Controls.Add(this.picture);
             this.content.Controls.Add(this.label1);
-            this.content.Controls.Add(this.comboBox1);
             this.content.Controls.Add(this.compileContent);
             this.content.Location = new System.Drawing.Point(4, 22);
             this.content.Name = "content";
@@ -215,14 +219,6 @@
             this.compileContent.Text = "Compile content (Vista or later)";
             this.compileContent.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(81, 34);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(235, 21);
-            this.comboBox1.TabIndex = 2;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -243,6 +239,39 @@
             this.fork.TabStop = true;
             this.fork.Text = "Fork me on GitHub!";
             this.fork.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Fork_LinkClicked);
+            // 
+            // picture
+            // 
+            this.picture.AutoSize = true;
+            this.picture.Location = new System.Drawing.Point(10, 53);
+            this.picture.Name = "picture";
+            this.picture.Size = new System.Drawing.Size(58, 17);
+            this.picture.TabIndex = 4;
+            this.picture.TabStop = true;
+            this.picture.Text = "Picture";
+            this.picture.UseVisualStyleBackColor = true;
+            // 
+            // music
+            // 
+            this.music.AutoSize = true;
+            this.music.Location = new System.Drawing.Point(10, 76);
+            this.music.Name = "music";
+            this.music.Size = new System.Drawing.Size(53, 17);
+            this.music.TabIndex = 5;
+            this.music.TabStop = true;
+            this.music.Text = "Music";
+            this.music.UseVisualStyleBackColor = true;
+            // 
+            // video
+            // 
+            this.video.AutoSize = true;
+            this.video.Location = new System.Drawing.Point(10, 99);
+            this.video.Name = "video";
+            this.video.Size = new System.Drawing.Size(52, 17);
+            this.video.TabIndex = 6;
+            this.video.TabStop = true;
+            this.video.Text = "Video";
+            this.video.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -286,9 +315,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.CheckBox compileContent;
         private System.Windows.Forms.LinkLabel fork;
+        private System.Windows.Forms.RadioButton video;
+        private System.Windows.Forms.RadioButton music;
+        private System.Windows.Forms.RadioButton picture;
     }
 }
 
