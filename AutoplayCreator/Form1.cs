@@ -37,7 +37,8 @@ namespace AutoplayCreator {
         private void Compile_Click(object sender, EventArgs e) {
             text += "[autorun]\n";
             text += "label=" + name.Text + "\n";
-            text += "open=" + openExe.FileName + "\n";
+            if (!openExe.FileName.Contains(" ")) text += "open=" + openExe.FileName + "\n";
+            else text += "open=\"\"" + openExe.FileName + "\"\"\n";
             text += "icon=" + openIcon.FileName + ",0";
             if (compileContent.Checked) {
                 text += "\n[Content]\n";
