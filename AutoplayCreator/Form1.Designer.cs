@@ -261,7 +261,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(165, 20);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Version 0.1 (githubcatw)";
+            this.label3.Text = "Version 0.2 (githubcatw)";
             // 
             // label2
             // 
