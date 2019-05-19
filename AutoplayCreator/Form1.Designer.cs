@@ -33,6 +33,11 @@
             this.openIcon = new System.Windows.Forms.OpenFileDialog();
             this.openExe = new System.Windows.Forms.OpenFileDialog();
             this.content = new System.Windows.Forms.TabPage();
+            this.video = new System.Windows.Forms.RadioButton();
+            this.music = new System.Windows.Forms.RadioButton();
+            this.picture = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.compileContent = new System.Windows.Forms.CheckBox();
             this.diskname = new System.Windows.Forms.TabPage();
             this.pickExe = new System.Windows.Forms.Button();
             this.pickIcon = new System.Windows.Forms.Button();
@@ -41,16 +46,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.help = new System.Windows.Forms.TabPage();
+            this.fork = new System.Windows.Forms.LinkLabel();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.saveAutorun = new System.Windows.Forms.SaveFileDialog();
-            this.compileContent = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.fork = new System.Windows.Forms.LinkLabel();
-            this.picture = new System.Windows.Forms.RadioButton();
-            this.music = new System.Windows.Forms.RadioButton();
-            this.video = new System.Windows.Forms.RadioButton();
             this.content.SuspendLayout();
             this.diskname.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox)).BeginInit();
@@ -86,6 +86,62 @@
             this.content.TabIndex = 1;
             this.content.Text = "Content";
             this.content.UseVisualStyleBackColor = true;
+            // 
+            // video
+            // 
+            this.video.AutoSize = true;
+            this.video.Enabled = false;
+            this.video.Location = new System.Drawing.Point(10, 99);
+            this.video.Name = "video";
+            this.video.Size = new System.Drawing.Size(52, 17);
+            this.video.TabIndex = 6;
+            this.video.TabStop = true;
+            this.video.Text = "Video";
+            this.video.UseVisualStyleBackColor = true;
+            // 
+            // music
+            // 
+            this.music.AutoSize = true;
+            this.music.Enabled = false;
+            this.music.Location = new System.Drawing.Point(10, 76);
+            this.music.Name = "music";
+            this.music.Size = new System.Drawing.Size(53, 17);
+            this.music.TabIndex = 5;
+            this.music.TabStop = true;
+            this.music.Text = "Music";
+            this.music.UseVisualStyleBackColor = true;
+            // 
+            // picture
+            // 
+            this.picture.AutoSize = true;
+            this.picture.Enabled = false;
+            this.picture.Location = new System.Drawing.Point(10, 53);
+            this.picture.Name = "picture";
+            this.picture.Size = new System.Drawing.Size(58, 17);
+            this.picture.TabIndex = 4;
+            this.picture.TabStop = true;
+            this.picture.Text = "Picture";
+            this.picture.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Content type:";
+            // 
+            // compileContent
+            // 
+            this.compileContent.AutoSize = true;
+            this.compileContent.Location = new System.Drawing.Point(10, 10);
+            this.compileContent.Name = "compileContent";
+            this.compileContent.Size = new System.Drawing.Size(169, 17);
+            this.compileContent.TabIndex = 1;
+            this.compileContent.Text = "Compile content (Vista or later)";
+            this.compileContent.UseVisualStyleBackColor = true;
+            this.compileContent.CheckedChanged += new System.EventHandler(this.CompileContent_CheckedChanged);
             // 
             // diskname
             // 
@@ -171,6 +227,18 @@
             this.help.Text = "About";
             this.help.UseVisualStyleBackColor = true;
             // 
+            // fork
+            // 
+            this.fork.AutoSize = true;
+            this.fork.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fork.Location = new System.Drawing.Point(88, 119);
+            this.fork.Name = "fork";
+            this.fork.Size = new System.Drawing.Size(147, 21);
+            this.fork.TabIndex = 4;
+            this.fork.TabStop = true;
+            this.fork.Text = "Fork me on GitHub!";
+            this.fork.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Fork_LinkClicked);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -208,70 +276,6 @@
             // saveAutorun
             // 
             this.saveAutorun.FileName = "autorun.inf";
-            // 
-            // compileContent
-            // 
-            this.compileContent.AutoSize = true;
-            this.compileContent.Location = new System.Drawing.Point(10, 10);
-            this.compileContent.Name = "compileContent";
-            this.compileContent.Size = new System.Drawing.Size(169, 17);
-            this.compileContent.TabIndex = 1;
-            this.compileContent.Text = "Compile content (Vista or later)";
-            this.compileContent.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Content type:";
-            // 
-            // fork
-            // 
-            this.fork.AutoSize = true;
-            this.fork.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fork.Location = new System.Drawing.Point(88, 119);
-            this.fork.Name = "fork";
-            this.fork.Size = new System.Drawing.Size(147, 21);
-            this.fork.TabIndex = 4;
-            this.fork.TabStop = true;
-            this.fork.Text = "Fork me on GitHub!";
-            this.fork.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Fork_LinkClicked);
-            // 
-            // picture
-            // 
-            this.picture.AutoSize = true;
-            this.picture.Location = new System.Drawing.Point(10, 53);
-            this.picture.Name = "picture";
-            this.picture.Size = new System.Drawing.Size(58, 17);
-            this.picture.TabIndex = 4;
-            this.picture.TabStop = true;
-            this.picture.Text = "Picture";
-            this.picture.UseVisualStyleBackColor = true;
-            // 
-            // music
-            // 
-            this.music.AutoSize = true;
-            this.music.Location = new System.Drawing.Point(10, 76);
-            this.music.Name = "music";
-            this.music.Size = new System.Drawing.Size(53, 17);
-            this.music.TabIndex = 5;
-            this.music.TabStop = true;
-            this.music.Text = "Music";
-            this.music.UseVisualStyleBackColor = true;
-            // 
-            // video
-            // 
-            this.video.AutoSize = true;
-            this.video.Location = new System.Drawing.Point(10, 99);
-            this.video.Name = "video";
-            this.video.Size = new System.Drawing.Size(52, 17);
-            this.video.TabIndex = 6;
-            this.video.TabStop = true;
-            this.video.Text = "Video";
-            this.video.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

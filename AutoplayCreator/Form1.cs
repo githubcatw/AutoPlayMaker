@@ -39,6 +39,12 @@ namespace AutoplayCreator {
             text += "label=" + name.Text + "\n";
             text += "open=" + openExe.FileName + "\n";
             text += "icon=" + openIcon.FileName + ",0";
+            if (compileContent.Checked) {
+                text += "\n[Content]\n";
+                text += "MusicFiles=" + music.Checked;
+                text += "PictureFiles=" + picture.Checked;
+                text += "VideoFiles=" + video.Checked;
+            }
             saveAutorun.Title = "Save autorun.inf";
             saveAutorun.DefaultExt = "inf";
             saveAutorun.Filter ="Information|*.inf";
@@ -59,6 +65,19 @@ namespace AutoplayCreator {
 
         private void Fork_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
             System.Diagnostics.Process.Start("https://github.com/githubcatw/AutoPlayMaker");
+        }
+
+        private void CompileContent_CheckedChanged(object sender, EventArgs e) {
+            if (!compileContent.Checked) {
+                picture.Enabled = false;
+                music.Enabled = false;
+                video.Enabled = false;
+            }
+            else {
+                picture.Enabled = true;
+                music.Enabled = true;
+                video.Enabled = true;
+            }
         }
     }
 }
