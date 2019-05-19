@@ -41,9 +41,9 @@ namespace AutoplayCreator {
             text += "icon=" + openIcon.FileName + ",0";
             if (compileContent.Checked) {
                 text += "\n[Content]\n";
-                text += "MusicFiles=" + music.Checked;
-                text += "PictureFiles=" + picture.Checked;
-                text += "VideoFiles=" + video.Checked;
+                text += "MusicFiles=" + music.Checked + "\n";
+                text += "PictureFiles=" + picture.Checked + "\n";
+                text += "VideoFiles=" + video.Checked + "\n";
             }
             saveAutorun.Title = "Save autorun.inf";
             saveAutorun.DefaultExt = "inf";
