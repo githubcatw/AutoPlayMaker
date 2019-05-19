@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("AutoPlay Maker")]
-[assembly: AssemblyDescription("AutoPlay creation tool")]
+[assembly: AssemblyDescription("A simple AutoPlay creation tool")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("NUDev")]
 [assembly: AssemblyProduct("AutoPlay Maker")]
