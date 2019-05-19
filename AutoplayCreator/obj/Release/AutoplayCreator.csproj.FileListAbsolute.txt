@@ -7,13 +7,13 @@ D:\VS19\projects\AutoplayCreator\AutoplayCreator\obj\Release\AutoplayCreator.csp
 D:\VS19\projects\AutoplayCreator\AutoplayCreator\obj\Release\AutoplayCreator.csproj.CoreCompileInputs.cache
 D:\VS19\projects\AutoplayCreator\AutoplayCreator\obj\Release\AutoplayCreator.exe
 D:\VS19\projects\AutoplayCreator\AutoplayCreator\obj\Release\AutoplayCreator.pdb
-D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\bin\Release\AutoplayCreator.exe.config
-D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\bin\Release\AutoplayCreator.exe
-D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\bin\Release\AutoplayCreator.pdb
 D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Release\AutoplayCreator.csprojAssemblyReference.cache
 D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Release\AutoplayCreator.Form1.resources
 D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Release\AutoplayCreator.Properties.Resources.resources
 D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Release\AutoplayCreator.csproj.GenerateResource.cache
 D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Release\AutoplayCreator.csproj.CoreCompileInputs.cache
-D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Release\AutoplayCreator.exe
-D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Release\AutoplayCreator.pdb
+D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\bin\Release\AutoPlay Maker.exe.config
+D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\bin\Release\AutoPlay Maker.exe
+D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\bin\Release\AutoPlay Maker.pdb
+D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Release\AutoPlay Maker.exe
+D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Release\AutoPlay Maker.pdb

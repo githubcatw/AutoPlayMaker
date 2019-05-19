@@ -284,6 +284,7 @@
             this.ClientSize = new System.Drawing.Size(363, 457);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.compile);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "AutoPlay Maker";
             this.Load += new System.EventHandler(this.Form1_Load);
