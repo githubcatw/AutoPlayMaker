@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>autorun.ico</ApplicationIcon>
+    <ApplicationIcon>autorun0.3.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -84,6 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="autorun.ico" />
+    <Content Include="autorun0.3.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
