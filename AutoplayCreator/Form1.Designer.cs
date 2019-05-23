@@ -45,24 +45,25 @@
             this.name = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.whitelist = new System.Windows.Forms.TabPage();
+            this.valueToAddToList = new System.Windows.Forms.TextBox();
+            this.wbList = new System.Windows.Forms.ListBox();
+            this.compileList = new System.Windows.Forms.CheckBox();
+            this.black = new System.Windows.Forms.RadioButton();
+            this.white = new System.Windows.Forms.RadioButton();
             this.help = new System.Windows.Forms.TabPage();
             this.fork = new System.Windows.Forms.LinkLabel();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.saveAutorun = new System.Windows.Forms.SaveFileDialog();
-            this.whitelist = new System.Windows.Forms.TabPage();
-            this.white = new System.Windows.Forms.RadioButton();
-            this.black = new System.Windows.Forms.RadioButton();
-            this.compileList = new System.Windows.Forms.CheckBox();
-            this.wbList = new System.Windows.Forms.ListBox();
             this.content.SuspendLayout();
             this.diskname.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
-            this.help.SuspendLayout();
             this.whitelist.SuspendLayout();
+            this.help.SuspendLayout();
             this.SuspendLayout();
             // 
             // compile
@@ -221,6 +222,69 @@
             this.tabControl1.Size = new System.Drawing.Size(338, 404);
             this.tabControl1.TabIndex = 1;
             // 
+            // whitelist
+            // 
+            this.whitelist.Controls.Add(this.valueToAddToList);
+            this.whitelist.Controls.Add(this.wbList);
+            this.whitelist.Controls.Add(this.compileList);
+            this.whitelist.Controls.Add(this.black);
+            this.whitelist.Controls.Add(this.white);
+            this.whitelist.Location = new System.Drawing.Point(4, 22);
+            this.whitelist.Name = "whitelist";
+            this.whitelist.Size = new System.Drawing.Size(330, 378);
+            this.whitelist.TabIndex = 3;
+            this.whitelist.Text = "Whitelist/Blacklist";
+            this.whitelist.UseVisualStyleBackColor = true;
+            // 
+            // valueToAddToList
+            // 
+            this.valueToAddToList.Location = new System.Drawing.Point(10, 347);
+            this.valueToAddToList.Name = "valueToAddToList";
+            this.valueToAddToList.Size = new System.Drawing.Size(308, 20);
+            this.valueToAddToList.TabIndex = 4;
+            this.valueToAddToList.KeyDown += new System.Windows.Forms.KeyEventHandler(this.valueToAddToList_KeyDown);
+            // 
+            // wbList
+            // 
+            this.wbList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.wbList.FormattingEnabled = true;
+            this.wbList.Location = new System.Drawing.Point(10, 66);
+            this.wbList.Name = "wbList";
+            this.wbList.Size = new System.Drawing.Size(308, 275);
+            this.wbList.TabIndex = 3;
+            // 
+            // compileList
+            // 
+            this.compileList.AutoSize = true;
+            this.compileList.Location = new System.Drawing.Point(10, 10);
+            this.compileList.Name = "compileList";
+            this.compileList.Size = new System.Drawing.Size(130, 17);
+            this.compileList.TabIndex = 2;
+            this.compileList.Text = "Compile (Vista or later)";
+            this.compileList.UseVisualStyleBackColor = true;
+            // 
+            // black
+            // 
+            this.black.AutoSize = true;
+            this.black.Location = new System.Drawing.Point(194, 36);
+            this.black.Name = "black";
+            this.black.Size = new System.Drawing.Size(64, 17);
+            this.black.TabIndex = 1;
+            this.black.Text = "Blacklist";
+            this.black.UseVisualStyleBackColor = true;
+            // 
+            // white
+            // 
+            this.white.AutoSize = true;
+            this.white.Checked = true;
+            this.white.Location = new System.Drawing.Point(47, 36);
+            this.white.Name = "white";
+            this.white.Size = new System.Drawing.Size(65, 17);
+            this.white.TabIndex = 0;
+            this.white.TabStop = true;
+            this.white.Text = "Whitelist";
+            this.white.UseVisualStyleBackColor = true;
+            // 
             // help
             // 
             this.help.Controls.Add(this.fork);
@@ -284,60 +348,6 @@
             // 
             this.saveAutorun.FileName = "autorun.inf";
             // 
-            // whitelist
-            // 
-            this.whitelist.Controls.Add(this.wbList);
-            this.whitelist.Controls.Add(this.compileList);
-            this.whitelist.Controls.Add(this.black);
-            this.whitelist.Controls.Add(this.white);
-            this.whitelist.Location = new System.Drawing.Point(4, 22);
-            this.whitelist.Name = "whitelist";
-            this.whitelist.Size = new System.Drawing.Size(330, 378);
-            this.whitelist.TabIndex = 3;
-            this.whitelist.Text = "Whitelist/Blacklist";
-            this.whitelist.UseVisualStyleBackColor = true;
-            // 
-            // white
-            // 
-            this.white.AutoSize = true;
-            this.white.Location = new System.Drawing.Point(47, 36);
-            this.white.Name = "white";
-            this.white.Size = new System.Drawing.Size(65, 17);
-            this.white.TabIndex = 0;
-            this.white.TabStop = true;
-            this.white.Text = "Whitelist";
-            this.white.UseVisualStyleBackColor = true;
-            // 
-            // black
-            // 
-            this.black.AutoSize = true;
-            this.black.Location = new System.Drawing.Point(194, 36);
-            this.black.Name = "black";
-            this.black.Size = new System.Drawing.Size(64, 17);
-            this.black.TabIndex = 1;
-            this.black.TabStop = true;
-            this.black.Text = "Blacklist";
-            this.black.UseVisualStyleBackColor = true;
-            // 
-            // compileList
-            // 
-            this.compileList.AutoSize = true;
-            this.compileList.Location = new System.Drawing.Point(10, 10);
-            this.compileList.Name = "compileList";
-            this.compileList.Size = new System.Drawing.Size(130, 17);
-            this.compileList.TabIndex = 2;
-            this.compileList.Text = "Compile (Vista or later)";
-            this.compileList.UseVisualStyleBackColor = true;
-            // 
-            // wbList
-            // 
-            this.wbList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wbList.FormattingEnabled = true;
-            this.wbList.Location = new System.Drawing.Point(10, 66);
-            this.wbList.Name = "wbList";
-            this.wbList.Size = new System.Drawing.Size(308, 288);
-            this.wbList.TabIndex = 3;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -356,10 +366,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
-            this.help.ResumeLayout(false);
-            this.help.PerformLayout();
             this.whitelist.ResumeLayout(false);
             this.whitelist.PerformLayout();
+            this.help.ResumeLayout(false);
+            this.help.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -393,6 +403,7 @@
         private System.Windows.Forms.CheckBox compileList;
         private System.Windows.Forms.RadioButton black;
         private System.Windows.Forms.RadioButton white;
+        private System.Windows.Forms.TextBox valueToAddToList;
     }
 }
 

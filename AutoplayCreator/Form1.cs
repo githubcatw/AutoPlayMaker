@@ -80,5 +80,13 @@ namespace AutoplayCreator {
                 video.Enabled = true;
             }
         }
+
+        private void valueToAddToList_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                wbList.Items.Add(valueToAddToList.Text);
+            }
+        }
     }
 }
