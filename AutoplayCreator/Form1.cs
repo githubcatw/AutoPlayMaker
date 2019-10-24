@@ -88,5 +88,12 @@ namespace AutoplayCreator {
                 wbList.Items.Add(valueToAddToList.Text);
             }
         }
+
+        private void iconBox_Click(object sender, EventArgs e) {
+            openIcon.Title = "Pick an Icon (.ico, on the same drive)";
+            openIcon.DefaultExt = "ico";
+            openIcon.Filter = "Icons (*.ico)|*.ico|Executables (*.exe)|*.exe";
+            openIcon.ShowDialog();
+        }
     }
 }

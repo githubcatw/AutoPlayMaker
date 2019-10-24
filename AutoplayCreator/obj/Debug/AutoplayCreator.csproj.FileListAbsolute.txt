@@ -12,7 +12,6 @@ D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Debug\AutoplayCreator.csprojAss
 D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Debug\AutoplayCreator.Form1.resources
 D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Debug\AutoplayCreator.Properties.Resources.resources
 D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Debug\AutoplayCreator.csproj.GenerateResource.cache
-D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\obj\Debug\AutoplayCreator.csproj.CoreCompileInputs.cache
 D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\bin\Debug\AutoPlay Maker.exe.config
 D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\bin\Debug\AutoPlay Maker.exe
 D:\GitHubRepos\AutoPlayMaker\AutoplayCreator\bin\Debug\AutoPlay Maker.pdb

@@ -40,7 +40,6 @@
             this.compileContent = new System.Windows.Forms.CheckBox();
             this.diskname = new System.Windows.Forms.TabPage();
             this.pickExe = new System.Windows.Forms.Button();
-            this.pickIcon = new System.Windows.Forms.Button();
             this.iconBox = new System.Windows.Forms.PictureBox();
             this.name = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -153,7 +152,6 @@
             // diskname
             // 
             this.diskname.Controls.Add(this.pickExe);
-            this.diskname.Controls.Add(this.pickIcon);
             this.diskname.Controls.Add(this.iconBox);
             this.diskname.Controls.Add(this.name);
             this.diskname.Controls.Add(this.pictureBox1);
@@ -167,23 +165,13 @@
             // 
             // pickExe
             // 
-            this.pickExe.Location = new System.Drawing.Point(7, 100);
+            this.pickExe.Location = new System.Drawing.Point(6, 70);
             this.pickExe.Name = "pickExe";
             this.pickExe.Size = new System.Drawing.Size(317, 23);
             this.pickExe.TabIndex = 4;
             this.pickExe.Text = "Pick Executable (on the same drive)";
             this.pickExe.UseVisualStyleBackColor = true;
             this.pickExe.Click += new System.EventHandler(this.PickExe_Click);
-            // 
-            // pickIcon
-            // 
-            this.pickIcon.Location = new System.Drawing.Point(7, 71);
-            this.pickIcon.Name = "pickIcon";
-            this.pickIcon.Size = new System.Drawing.Size(317, 23);
-            this.pickIcon.TabIndex = 3;
-            this.pickIcon.Text = "Pick Icon (.ICO, on the same drive)";
-            this.pickIcon.UseVisualStyleBackColor = true;
-            this.pickIcon.Click += new System.EventHandler(this.PickIcon_Click);
             // 
             // iconBox
             // 
@@ -382,7 +370,6 @@
         private System.Windows.Forms.TabPage content;
         private System.Windows.Forms.TabPage diskname;
         private System.Windows.Forms.Button pickExe;
-        private System.Windows.Forms.Button pickIcon;
         private System.Windows.Forms.PictureBox iconBox;
         private System.Windows.Forms.TextBox name;
         private System.Windows.Forms.PictureBox pictureBox1;
