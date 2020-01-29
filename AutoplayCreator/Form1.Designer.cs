@@ -51,7 +51,7 @@
             this.help = new System.Windows.Forms.TabPage();
             this.fork = new System.Windows.Forms.LinkLabel();
             this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.versionLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.saveAutorun = new System.Windows.Forms.SaveFileDialog();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -214,6 +214,7 @@
             this.valueToAddToList.Name = "valueToAddToList";
             this.valueToAddToList.Size = new System.Drawing.Size(308, 20);
             this.valueToAddToList.TabIndex = 4;
+            this.valueToAddToList.TextChanged += new System.EventHandler(this.valueToAddToList_TextChanged);
             this.valueToAddToList.KeyDown += new System.Windows.Forms.KeyEventHandler(this.valueToAddToList_KeyDown);
             // 
             // wbList
@@ -261,7 +262,7 @@
             // 
             this.help.Controls.Add(this.fork);
             this.help.Controls.Add(this.label5);
-            this.help.Controls.Add(this.label3);
+            this.help.Controls.Add(this.versionLabel);
             this.help.Controls.Add(this.label2);
             this.help.Location = new System.Drawing.Point(4, 22);
             this.help.Name = "help";
@@ -296,15 +297,15 @@
     "e\r\nreleases.";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label3
+            // versionLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(78, 84);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 20);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Version 0.2 (githubcatw)";
+            this.versionLabel.AutoSize = true;
+            this.versionLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.versionLabel.Location = new System.Drawing.Point(78, 84);
+            this.versionLabel.Name = "versionLabel";
+            this.versionLabel.Size = new System.Drawing.Size(165, 20);
+            this.versionLabel.TabIndex = 1;
+            this.versionLabel.Text = "Version 0.2 (githubcatw)";
             // 
             // label2
             // 
@@ -389,7 +390,7 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.SaveFileDialog saveAutorun;
         private System.Windows.Forms.TabPage help;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label versionLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
