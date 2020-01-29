@@ -56,6 +56,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.saveAutorun = new System.Windows.Forms.SaveFileDialog();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.content.SuspendLayout();
             this.diskname.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox)).BeginInit();
@@ -155,6 +156,7 @@
             this.diskname.Controls.Add(this.iconBox);
             this.diskname.Controls.Add(this.name);
             this.diskname.Controls.Add(this.pictureBox1);
+            this.diskname.Controls.Add(this.groupBox1);
             this.diskname.Location = new System.Drawing.Point(4, 22);
             this.diskname.Name = "diskname";
             this.diskname.Padding = new System.Windows.Forms.Padding(3);
@@ -165,9 +167,9 @@
             // 
             // pickExe
             // 
-            this.pickExe.Location = new System.Drawing.Point(6, 70);
+            this.pickExe.Location = new System.Drawing.Point(7, 87);
             this.pickExe.Name = "pickExe";
-            this.pickExe.Size = new System.Drawing.Size(317, 23);
+            this.pickExe.Size = new System.Drawing.Size(320, 27);
             this.pickExe.TabIndex = 4;
             this.pickExe.Text = "Pick Executable (on the same drive)";
             this.pickExe.UseVisualStyleBackColor = true;
@@ -175,24 +177,25 @@
             // 
             // iconBox
             // 
-            this.iconBox.Location = new System.Drawing.Point(6, 15);
+            this.iconBox.Location = new System.Drawing.Point(13, 25);
             this.iconBox.Name = "iconBox";
             this.iconBox.Size = new System.Drawing.Size(48, 49);
             this.iconBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.iconBox.TabIndex = 2;
             this.iconBox.TabStop = false;
+            this.iconBox.Click += new System.EventHandler(this.iconBox_Click_1);
             // 
             // name
             // 
-            this.name.Location = new System.Drawing.Point(61, 10);
+            this.name.Location = new System.Drawing.Point(68, 20);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(266, 20);
+            this.name.Size = new System.Drawing.Size(249, 20);
             this.name.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(6, 15);
+            this.pictureBox1.Location = new System.Drawing.Point(13, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(247, 49);
             this.pictureBox1.TabIndex = 0;
@@ -336,6 +339,15 @@
             // 
             this.saveAutorun.FileName = "autorun.inf";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(4, 4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(319, 81);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Appearance";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -391,6 +403,7 @@
         private System.Windows.Forms.RadioButton black;
         private System.Windows.Forms.RadioButton white;
         private System.Windows.Forms.TextBox valueToAddToList;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 

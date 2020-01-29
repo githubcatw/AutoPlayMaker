@@ -153,35 +153,6 @@
         RU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        RU5ErkJggg==
-</value>
-  </data>
   <metadata name="saveAutorun.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>218, 17</value>
   </metadata>

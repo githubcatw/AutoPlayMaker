@@ -95,5 +95,9 @@ namespace AutoplayCreator {
             openIcon.Filter = "Icons (*.ico)|*.ico|Executables (*.exe)|*.exe";
             openIcon.ShowDialog();
         }
+
+        private void iconBox_Click_1(object sender, EventArgs e) {
+            iconBox_Click(sender, e);
+        }
     }
 }
