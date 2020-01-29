@@ -81,6 +81,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="apm.pfx" />
     <None Include="Properties\Settings.settings">
@@ -99,6 +100,8 @@
   <ItemGroup>
     <Content Include="autorun.ico" />
     <Content Include="autorun0.3.ico" />
+    <None Include="Resources\noicon64.png" />
+    <None Include="Resources\noicon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

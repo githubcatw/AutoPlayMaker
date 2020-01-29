@@ -40,9 +40,7 @@
             this.compileContent = new System.Windows.Forms.CheckBox();
             this.diskname = new System.Windows.Forms.TabPage();
             this.pickExe = new System.Windows.Forms.Button();
-            this.iconBox = new System.Windows.Forms.PictureBox();
             this.name = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.whitelist = new System.Windows.Forms.TabPage();
             this.valueToAddToList = new System.Windows.Forms.TextBox();
@@ -57,13 +55,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.saveAutorun = new System.Windows.Forms.SaveFileDialog();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.iconBox = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.content.SuspendLayout();
             this.diskname.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.whitelist.SuspendLayout();
             this.help.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // compile
@@ -175,31 +175,12 @@
             this.pickExe.UseVisualStyleBackColor = true;
             this.pickExe.Click += new System.EventHandler(this.PickExe_Click);
             // 
-            // iconBox
-            // 
-            this.iconBox.Location = new System.Drawing.Point(13, 25);
-            this.iconBox.Name = "iconBox";
-            this.iconBox.Size = new System.Drawing.Size(48, 49);
-            this.iconBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconBox.TabIndex = 2;
-            this.iconBox.TabStop = false;
-            this.iconBox.Click += new System.EventHandler(this.iconBox_Click_1);
-            // 
             // name
             // 
             this.name.Location = new System.Drawing.Point(68, 20);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(249, 20);
             this.name.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(13, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(247, 49);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // tabControl1
             // 
@@ -348,6 +329,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Appearance";
             // 
+            // iconBox
+            // 
+            this.iconBox.Image = global::AutoplayCreator.Properties.Resources.noicon64;
+            this.iconBox.Location = new System.Drawing.Point(13, 25);
+            this.iconBox.Name = "iconBox";
+            this.iconBox.Size = new System.Drawing.Size(48, 49);
+            this.iconBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconBox.TabIndex = 2;
+            this.iconBox.TabStop = false;
+            this.iconBox.Click += new System.EventHandler(this.iconBox_Click_1);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(13, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(247, 49);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -363,13 +364,13 @@
             this.content.PerformLayout();
             this.diskname.ResumeLayout(false);
             this.diskname.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.whitelist.ResumeLayout(false);
             this.whitelist.PerformLayout();
             this.help.ResumeLayout(false);
             this.help.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
