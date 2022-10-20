@@ -1,3 +1,7 @@
+This is an app that I made a while ago, and I'm not sure if anyone will still have a use for an autorun.ini file creator. If you wish to fork it and make improvements (which this app needs) feel free. The code is unlicensed, but please keep it open source.
+
+---
+
 # AutoPlay Maker
 
 ![Logo](images/apm.png)
